@@ -1,0 +1,17 @@
+{
+  "name": "amcc-web-frontend-2024-pertemuan-4",
+  "version": "1.0.0",
+  "description": "Materi : Pengenalan Tailwind CSS",
+  "license": "ISC",
+  "author": "Yoapipp",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "npx @tailwindcss/cli -i ./assets/input.css -o ./assets/style.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.14",
+    "tailwindcss": "^4.0.14"
+  }
+}

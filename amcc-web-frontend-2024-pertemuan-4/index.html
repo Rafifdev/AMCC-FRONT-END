@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rent. - Car Rental Service</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+
+  <body class="bg-white">
+    <!-- Navigation Bar -->
+    <nav class="bg-white">
+      <div class="w-full mx-auto px-16">
+        <div class="flex justify-between items-center py-6">
+          <div class="flex items-center">
+            <div
+              class="w-16 h-16 rounded-full bg-blue-800 flex items-center justify-center"
+            ></div>
+            <a href="#" class="text-3xl font-bold text-black px-3">Rent.</a>
+          </div>
+
+          <!-- Navigation Links -->
+          <div
+            class="flex items-center space-x-16 font-medium text-gray-500 text-lg transition"
+          >
+            <a href="#" class="hover:text-black duration-300">Home</a>
+            <a href="#" class="hover:text-black duration-300">Booking</a>
+            <a href="#" class="hover:text-black duration-300">Promo</a>
+            <a href="#" class="hover:text-black duration-300">Help</a>
+          </div>
+
+          <!-- Location Section -->
+          <div class="flex items-center space-x-2">
+            <div>
+              <p class="text-black font-medium">Your Location</p>
+              <p class="text-blue-800 font-semibold text-xl transform">
+                Indonesia
+              </p>
+            </div>
+            <div class="ml-2">
+              <img src="./assets/location-navbar.svg" alt="" class="w-16" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Section with Background Image -->
+    <header
+      class="min-h-screen rounded-t-3xl px-16 flex items-center relative"
+      style="
+        background-image: url('/assets/background-image.png');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="space-y-8 flex items-center justify-between w-full">
+        <div class="space-y-8">
+          <div class="space-y-4 max-w-xl">
+            <h1 class="text-white font-bold text-5xl">
+              Looking to save more on your rental car?
+            </h1>
+            <p class="text-white text-lg">
+              Book longer durations for exclusive discounts, free upgrades, and
+              loyalty rewards. Save more while enjoying quality transportation
+              options.
+            </p>
+          </div>
+          <!-- Buttons -->
+          <div class="space-x-4">
+            <button
+              class="border-2 border-white text-white hover:bg-white hover:text-blue-800 text-lg font-semibold rounded-xl transition duration-300 px-8 py-3 cursor-pointer"
+            >
+              REGISTER
+            </button>
+            <button
+              class="border-2 border-white text-blue-800 bg-white text-lg font-semibold rounded-xl transition duration-300 px-8 py-3 cursor-pointer"
+            >
+              LOGIN
+            </button>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/car1.png" alt="" class="w-[35rem]" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Search Form Section -->
+    <section
+      class="mx-auto bg-white rounded-2xl shadow-xl absolute left-1/2 transform -translate-x-1/2 -translate-y-16 p-8"
+    >
+      <div class="space-y-4 flex items-center space-x-6">
+        <!-- Destination Input -->
+        <div>
+          <label class="text-gray-800 font-medium">Your Destination</label>
+          <div class="relative">
+            <div class="flex items-center border border-gray-300 rounded-xl p-2">
+              <img src="./assets/location.svg" alt="" class="w-6"/>
+              <input type="text" placeholder="Add Your Location" class="px-3 py-4 outline-none"/>
+            </div>
+          </div>
+        </div>
+
+        <!-- Start Date Input -->
+        <div>
+          <label class="text-gray-800 font-medium">Start Rent</label>
+          <div class="relative">
+            <div class="flex items-center border border-gray-300 rounded-xl p-3">
+              <input type="date" placeholder="MM/DD/YYYY" class="px-3 py-4 outline-none"/>
+            </div>
+          </div>
+        </div>
+
+        <!-- End Date Input -->
+        <div>
+          <label class="text-gray-800 font-medium">End Rent</label>
+          <div class="relative">
+            <div class="flex items-center border border-gray-300 rounded-xl p-2">
+              <input type="date" placeholder="MM/DD/YYYY" class="px-3 py-4 outline-none"/>
+            </div>
+          </div>
+        </div>
+
+        <!-- Search Button -->
+        <div>
+          <button class="text-white text-lg bg-blue-600 hover:text-slate-100 hover:bg-blue-800 font-semibold rounded-xl transition duration-300 px-8 py-3 cursor-pointer">Cari</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Car Listings Section -->
+    <section>
+      <h1>Start Your Adventures</h1>
+      <!-- card container -->
+      <div>
+        <!-- Car Card 1 -->
+        <div>
+          <div>
+            <img src="assets/car.png" alt="Toyota Avanza" />
+            <p>Popular</p>
+          </div>
+
+          <div>
+            <h2>Toyota Avanza <span>(Black)</span></h2>
+            <p>Rp 320,000 <span>/day</span></p>
+          </div>
+
+          <div class="border-t-2 border-blue-600 my-2"></div>
+
+          <div>
+            <div>
+              <img src="assets/speed.svg" alt="Speed" />
+              <p>250 kmh</p>
+            </div>
+
+            <div>
+              <p>8</p>
+              <img src="assets/seat.svg" alt="Seats" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Available Cars Section -->
+    <section>
+      <!-- header section -->
+      <div>
+        <h1>Available Now</h1>
+        <div>
+          <p>Filter</p>
+          <button>
+            <img src="./assets/filter.svg" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <!-- Car Listings -->
+      <div>
+        <!-- Car Card 1 -->
+        <div>
+          <div>
+            <div>
+              <p>3/5</p>
+              <img src="./assets/star.svg" alt="" />
+            </div>
+            <img src="./assets/car.png" alt="Toyota Avanza" />
+          </div>
+
+          <div>
+            <h2>Toyota Avanza <span>(Black)</span></h2>
+            <p>Rp 320,000 <span>/day</span></p>
+
+            <div>
+              <div>
+                <img src="./assets/location.svg" alt="" />
+                <span>Yogyakarta</span>
+              </div>
+
+              <div>
+                <span>8</span>
+                <img src="./assets/seat.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div>
+        <div>
+          <div>
+            <div
+              class="w-16 h-16 rounded-full bg-white flex items-center justify-center"
+            ></div>
+            <h2>Rent.</h2>
+          </div>
+          <div>
+            <a href="#">Booking</a>
+            <a href="#">Promo</a>
+            <a href="#">Help</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
