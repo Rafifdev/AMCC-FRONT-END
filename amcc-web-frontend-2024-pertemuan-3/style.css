@@ -1,0 +1,349 @@
+/* CSS Reset untuk konsistensi */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Properti global dan variable */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --accent-color: #e74c3c;
+  --light-color: #ecf0f1;
+  --dark-color: #2c3e50;
+}
+
+/* Styling Body - Box Model Demo */
+body {
+  background-color: var(--light-color);
+  padding: 20px;
+  /* Box model properties */
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Header Styling - Position Demo */
+header {
+  position: sticky; /* Position property demo */
+  top: 0;
+  z-index: 3;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  border-radius: 8px;
+  /* Box shadow untuk efek */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Main Content - Flexbox Container Demo */
+main {
+  display: flex; /* Flexbox container */
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+  color: var(--secondary-color);
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+/* Form Styling - Flexbox Item Properties */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Styling untuk group input - Flex item */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.input-group input,
+.input-group select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  /* Box sizing */
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Styling untuk radio dan checkbox - Flex container */
+.options-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.option-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Button Styling - Flex container */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  /* Transition untuk efek hover */
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+button[type="reset"] {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styling - Position dan Z-index demo */
+footer {
+  position: relative;
+  z-index: 1; /* Z-index demo */
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+/* Card Container - Flexbox container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+/* Card Styling - Flexbox item */
+.card {
+  flex: 1 1 300px; /* Flex grow, shrink, basis */
+  max-width: 350px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden; /* Overflow property demo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+
+  position: relative; /* Position property untuk hover effect */
+  padding: 10px;
+  margin: 10px;
+  border: 1px dashed #000000
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 2%
+}
+
+.card-image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+/* Label dengan position absolute */
+.image-label {
+  position: absolute;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  z-index: 2; /* Memastikan label ada di atas gambar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Pastikan gambar tetap tampil dengan proporsi yang benar */
+.card-image-container .card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.card-price {
+  font-weight: bold;
+  color: var(--accent-color);
+  font-size: 1.1rem;
+}
+
+.card-button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 0 0 8px 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card-button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Design dengan Media Queries */
+@media screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  header img {
+    max-height: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  header,
+  footer {
+    padding: 15px;
+  }
+
+  header img {
+    max-height: 150px;
+  }
+
+  main h2 {
+    font-size: 1.5rem;
+  }
+
+  .input-group input,
+  .input-group select,
+  button {
+    padding: 8px;
+  }
+}
+
+/* Pseudo-class dan Pseudo-element Demos */
+/* Pseudo-class untuk form elements */
+input:focus,
+select:focus {
+  outline: 2px solid var(--primary-color);
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Pseudo-class untuk links */
+a:link,
+a:visited {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+  color: #2980b9;
+}
+
+/* Pseudo-elements */
+.card-title::before {
+  content: "🚗 ";
+}
+
+main p::first-letter {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Nth-child selector untuk cards */
+.card:nth-child(odd) {
+  border-left: 4px solid var(--primary-color);
+}
+
+.card:nth-child(even) {
+  border-left: 4px solid var(--accent-color);
+}
